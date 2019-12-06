@@ -22,7 +22,7 @@ public class Palindrome {
      */
     public boolean isPalindrome(String text) {
         String essentialText = text.replaceAll("[^a-zA-Z]", "");
-        String reversedEssentialText = new StringBuffer(essentialText).reverse().toString();
+        String reversedEssentialText = new StringBuilder(essentialText).reverse().toString();
         return essentialText.equalsIgnoreCase(reversedEssentialText);
     }
 }
